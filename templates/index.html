@@ -1,0 +1,734 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><title>
+	KGISL-EDU DeepRacer 2.O
+</title><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta itemprop="image" content="{{url_for('static',filename='meta-img.jpg')}}" />
+
+    <link rel="icon" href="{{url_for('static',filename='favicon.png')}}" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='slick.css')}}" /> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="{{url_for('static',filename='font.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        li  {
+                font: 15px verdana;
+                color:white;
+                list-style:none;
+            }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+                }
+
+.sticky + .content {
+  padding-top: 60px;
+}
+       .video-aws{
+        display: flex;  
+        justify-content: center ;
+        align-items: center;
+        width:"50%";
+        height :100%;
+       }
+       .vedio-section{
+        height: 50vh;
+        margin-bottom: 20px;
+       }   
+       .carousel_size {
+        height:80%;
+
+       }
+        
+            
+    </style>
+</head>
+
+<body>
+    <header id="header-area" style="padding:20px;">
+        
+        <div class="header-top py-3 bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-4">
+                        <a class="navbar-brand" href="https://edu.kgisl.com/">
+                            <img src="{{url_for('static',filename='edu-logo1.png')}}" style="width:70px;height:70px;"></a>
+                    </div>
+                    <div class="col-md-6 col-9 d-flex justify-content-center mobhide align-items-center;"">
+                        <img src="{{url_for('static',filename='kgisl.png')}}" style="width:100px;height:100px;padding-top:26px;"> &nbsp;&nbsp;&nbsp;
+                        <h2 style="color:#191970; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:30px;padding-top:25px;">  DEEPRACER 2.0 </h2>
+                    </div>
+                    <div class="col-md-2  mobhide d-flex justify-content-end ms-auto align-items-center">
+                        <a class="logo-col" href="https://aws.amazon.com/education/awseducate/" target="_blank">
+                        <img src="{{url_for('static',filename='asset.png')}}" style="padding-top:30px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky ">
+
+            <div class="container">
+                 <a class="navbar-brand" href="index.aspx">
+                    <img src="assets/images/logo.png" alt="">
+                </a> 
+                <a href="https://aws.amazon.com/education/awseducate/ " target="_blank" class="mobile-logo">
+                    <img src="./assets/images/AWS-Educate.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-sec">About the league</a>
+                        </li> 
+                         
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#journey">Journey</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#eligibility">ELIGIBILITY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prizes">Prizes</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#demo">DR LEAGUE 2022​</a>
+                        </li>
+                         
+
+                    </ul>
+                    <div class="logo-col">
+                        <a href="https://aws.amazon.com/education/awseducate/ " target="_blank">
+                            <img src="./assets/images/AWS-Educate.png" alt="">
+                        </a>
+
+                    </div> 
+                </div>
+            </div>
+        </nav>
+      
+    </header> <br><br><br><br>                                                                                                        
+    <div class="BannerSec " style="background-image: url({{ url_for ('static', filename = 'slide-01.png') }}); no-repeat center/cover;">
+        <div class="container">
+           <div class="row align-items-center">
+              <div class="col-md-6">
+                 <div class="bannerText mb-1 ">
+                    <h1 style="color:white;">DEEPRACER 2.0​</h1>
+                       <h3 style="font-weight:bold;font-size:23px;font-family:Verdana, Geneva, Tahoma, sans-serif;">The race towards future begins now .. </h3><br>
+                      <p style="color:white;font-size:20px;">   
+                       Welcome to the opportunity to learn about the latest developments in reinforcement learning  and autonous technology and to create a network with Professionals in the field. <br>
+        ​​              
+                   </p>
+                   <p style="color:darkorange;font-size:25px;font-family:Lucida Console;">Ready Set  Go !</p>
+                    
+                   <button type="button" class="btn" > <a href="{{url_for('register')}}" style="color:white;">Register Now</a>
+                </div>
+             
+              </div> 
+              <div class="col-md-5">
+                    <div class="BannerImg text-center">
+                       <div class="badge-img" >
+                          <img src="{{url_for('static',filename='aws-badge.png')}}" alt="" style="margin-right:2px;width:250px;height:250px;">
+     
+                      
+                      </div>
+                    </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+
+  
+    <section id="about-sec" class="about-sec-ui p90" ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-7">
+                    <div class="about-txt-" >
+                        <h2 data-caption="AWS ">About  DeepRacer 2.O</h2>
+                        <p  style="font-size:18px;font-family: Verdana, Geneva, Tahoma, sans-serif;text-align: justify;">
+                            The DeepRacer League is a virtual   and Physical Racing league that uses deep reinforcement learning to train autonomous vehicles that compete on a simulated racetrack. It is organized by KGiSL Educational Institutions, Coimbatore, Tamilnadu and is open to Academic and Industry members interested in learning about and experimenting with machine learning. Participants can train their own models using the AWS DeepRacer platform. The 48 Hrs Bootcamp provides mentors, workshops and technical sessions for the participants to make their model complete the race in the minimum time period.
+                    </div>
+                </div>
+                <div class="col-md-5">
+
+
+                    <div class="imageMove">
+                        <img src="{{url_for('static',filename='spin-car.gif')}}">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="boxSec" style="background-color:rgb(24, 22, 22);">
+        <div class="container">
+            <div class="row icons-box">
+                <div class="col-md-4">
+                    <div class="icon-box-design">
+                        <h2>Discovering ML </h2>
+                        <i>
+                            <img src="{{url_for('static',filename='ai-ml.png')}}" alt=""></i>
+                        <p>
+                            Skill yourself and get started on ML using <a href="https://aws.amazon.com/education/awseducate/" target="_blank"> KGiSL Edu LMS</a> and <a href="https://student.deepracer.com/signIn?redirectUrl=%2FsignIn" target="_blank">AWS DeepRacer student.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box-design">
+                        <h2>Experiment and Participate</h2>
+                        <i>
+                            <img src="{{url_for('static',filename='experiment.png')}}" alt=""></i>
+                        <p>Experiment your Model in a live track during bootcamp  </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box-design">
+                        <h2>Win prizes </h2>
+                        <i>
+                            <img src="{{url_for('static',filename='win-prizes.png')}}" alt=""></i>
+                        <p>
+                            Fasten your seat belts, go full throttle, and win exciting prizes.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+   <br>
+   <section class="vedio-section">
+    <div class="video-aws">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oGbNv_71f0Y" width="50%" height="100%"></iframe>
+    </div>
+</section>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner"   data-interval="100" >
+      <div class="carousel-item active">
+        <img src="{{url_for('static',filename='dpr2022_1.jpeg')}}" alt="img1" class="d-block" style="width:100%;">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static',filename='dpr2022_3.webp')}}" alt="img2" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static',filename='img_0479.jpg')}}" alt="img3" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static',filename='img_0456.jpg')}}" alt="img4" class="d-block" style="width:100%">
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  
+
+ <section class="winSec p90">
+    <div class="container">
+        <div class="site-heading mb-5 text-center">
+            <h2 class="text-center">Winners of AWS DR LEAGUE 2022​​​</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="winBox text-white mb-3">
+                   <div class="ribbon"><span>Champion</span></div>
+                   <div class="winnerImg mb-2">
+                    <img src="assets/images/Prudhviraju.jpg">
+                   </div>
+                        <h4>Ms. Kousipriya</h4>
+                        <p class="pe-5">KGiSL institute of Techonology,<br> Combatore</p>
+                        <div class="winnerTime d-flex justify-content-between align-items-center">
+                            <span class="timeLabel">Best Lap Time</span>
+                            <span class="timeValue"> 00.15.80 </span>
+                           </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+             <div class="winBox text-white mb-3">
+                <div class="ribbon"><span>1st Runner Up</span></div>
+                <div class="winnerImg mb-2">
+                   <img src="assets/images/Yugal.png">
+                </div>
+                     <h4>Mr. Madhana Bala</h4>
+                     <p class="pe-5">Sri Krishna College of Engineering and Techonlogy, Coimbatore</p>
+                     <div class="winnerTime d-flex justify-content-between align-items-center">
+                        <span class="timeLabel">Best Lap Time</span>
+                        <span class="timeValue">00.19.80</span>
+                     
+                       </div>
+             </div>
+         </div>
+
+         
+        </div>
+    </div>
+</section>
+<br>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+</div>
+    <!--journey section-->
+    <main  class="journey-ui p90" id="journey" style="background-image: url({{ url_for('static', filename='journer_bg.jfif') }})">
+        <div class="container" style="background-color:rgb(5, 5, 5);">
+            <div class="row">
+                <div class="col-md-12 site-heading">
+                    <h2 style="margin-top:20px;">Journey through the league </h2>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="row ">
+                        <div class="col-md-6 mb-4">
+                            <div class="step-col">
+                                <div class="icons">
+                                    <img src="{{url_for('static',filename='aws-step-2.png')}}" alt="">
+                                </div>
+                                <div class="col-ui">
+                                    <h3>1. Registration</h3>
+                                    <h4>Register your team with us. </h4>
+                               
+                                <h5>Everyone who registers for the event will participate in this race. </h5>​ 
+                                    
+                               
+                              <button type="button" class="btn" > <a href="{{url_for('register')}}" style="color:white;">Register Now</a>
+        
+                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="step-col">
+                                <div class="icons">
+                                    <img src="{{url_for('static',filename='aws-step-4.png')}}" alt="">
+                                </div>
+                                <div class="col-ui">
+                                    <h3>2. Learning </h3> 
+                                    <h5>Complete the course and push yurself to virtual league. </h5>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="step-col">
+                                <div class="icons">
+                                    <img src="{{url_for('static',filename='aws-step-3.png')}}" alt="">
+                                <h3>3. virtual League </h3>
+                                <h5>A virtual Race will be conducted and teams will be selected for GRAND FINALE. </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="step-col">
+                                <div class="icons">
+                                    <img src="{{url_for('static',filename='aws-step-5.png')}}" alt="">
+                                </div>
+                                <div class="col-ui">
+                                    <h3>4. Bootcamp</h3>
+                                    <ol>
+                                        <li> Mentoring</li>
+                                        <li> Workshop</li>
+                                        <li> Technical sessions</li>
+                                        <li>Live track</li>
+                                    </ol>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <center><div class="col-md-12 mb-4">
+                            <div class="step-col">
+                                <div class="icons">
+                                    <img src="{{url_for('static',filename='aws-step-5.png')}}" alt="">
+                                </div>
+                                <div class="col-ui" >
+                                    <h3>5. Grand Finale</h3>
+                                    <ul>
+                                        <li>Selected finalists will participate in the Gand Finale.<br>
+                                        Top 3 racers will be declared as winners of AWS Deepracer League 2023  </li>
+
+                                    </ul>
+                                    
+                                </div>                                 
+                            </div>
+                        </div> </center>
+                   
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+   
+        <div class="container-fluid">
+            <div class="site-heading mb-2 text-center">
+                <h2 class="text-center">Important dates for DeepRacer 2.O​​​</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="winBox text-white mb-3">
+                        <span style="color:white;">Registration</span>
+                        <h4 style="font-size:20px;"> 28.01.2023 </h4>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="winBox text-white mb-3">
+                            <span style="color:white;">Registration ends </span>
+                            <h4 style="font-size:20px;"> 01.03.2023 </h4>
+                        </div>
+                        </div>
+             
+                    <div class="col-md-4">
+                        <div class="winBox text-white mb-3">
+                           <span style="color:white;">virtual Race</span>
+                           <h4 style="font-size:20px;"> 25.02.2023 to 03.03.30223 </h4>
+                        </div>
+                        </div>
+                    
+                    
+                        <div class="col-md-4">
+                            <div class="winBox text-white mb-3">
+                                <span style="color:white;">Bootcamp registration</span>
+                                <h4 style="font-size:20px;"> 05.03.2023</h4>
+                                    
+                                       </div>
+                            </div>
+                        
+                        
+                           
+                                <div class="col-md-4">
+                                    <div class="winBox text-white mb-3">
+                                        <span style="color:white;">Bootcamp</span>
+                                        <h4 style="font-size:20px;"> 10.03.2023 to 12.03.2023</h4>
+                                            
+                                               </div>
+                                    </div>
+                                
+    
+                                        
+                                    <div class="col-md-4">
+                                        <div class="winBox text-white mb-3">
+                                           <span style="color:white;">Grand Finale</span>
+                                           <h4 style="font-size:20px;"> 12.03.2023</h4>
+                                                
+                                                   </div>
+                                        </div>
+                                    
+                          </div>
+                </div>
+           
+        
+    <div class="eligibility p90" id="eligibility" style="background-color:rgb(24, 22, 22);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="site-heading">
+                        <h2>eligibility</h2>
+                        <ul>
+                            <li>Students currently enrolled with a recognized academic institute in India and
+                            
+                                above 18 years in age. </li>
+                        </ul>
+                        <ul>
+                            <li>Industry Professionals
+                                 </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{url_for('static',filename='motar-img.png')}}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="prizes " id="prizes" style="background-color:rgb(48, 45, 45);">
+        <div class="container-fluid mt-3">
+            <div class="site-heading ">
+                            <h2 class="text-white">Awards and Recognition </h2>
+                        </div>
+                <div class="row">
+    
+            <div class="col-lg-4 col-md-6 col-sm-6 col-md-6">
+                    <div class="prize-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <span class="prize-label"><strong>1st Prize </strong></span>
+                        <div class="icon mb-3">
+                            <img src="{{url_for('static',filename='prize.png')}}">
+                            
+                        </div>
+                        <ol class="text-start">
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                Amazon voucher worth Rs 1,00,000  </li>
+                            </ol>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-md-6">
+                    <div class="prize-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <span class="prize-label"><strong>2nd Prize </strong></span>
+                        <div class="icon mb-3">
+                            <img src="{{url_for('static',filename='prize.png')}}">
+                        </div>
+                        <ol class="text-start">
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                Amazon voucher worth Rs 75,000  </li>
+                            </ol>
+                        </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-md-6">
+                    <div class="prize-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <span class="prize-label"><strong>All Participants </strong></span>
+                        <div class="icon mb-3">
+                            <img src="{{url_for('static',filename='prize.png')}}">
+                        </div>
+                        <ol class="text-start">
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                Digital participation certificate </li>
+                            </ol>
+                        </div>
+                        </div>
+
+    
+  </div>
+</div>
+
+        </div>
+    </section>
+    
+
+  
+  
+    
+    <!--<section class="prizes " id="prizes" style="background-color:rgb(48, 45, 45);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="section-title ">
+                        
+
+                        <div class="site-heading ">
+                            <h2 class="text-white">Awards and Recognition </h2>
+                        </div>
+
+                         </div>
+                </div>
+            </div>
+            
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-md-6">
+                    <div class="prize-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <span class="prize-label"><strong>1st Prize </strong></span>
+                        <div class="icon mb-3">
+                            <img src="{{url_for('static',filename='prize.png')}}">
+                        </div>
+                        <ol class="text-start">
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                Amazon voucher worth Rs 1,00,000  </li>
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                AWS Branded Swag Kit</li>
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                Direct Entry to AWS Global DeepRacer Student Championship Cup</li>
+
+                        </ol>
+                       
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="prize-box wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <span class="prize-label"><strong>2nd Prize</strong></span>
+                        <div class="icon mb-3">
+                            <img src="{{url_for('static',filename='prize.png')}}">
+                        </div>
+                        <ol class="text-start">
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                Amazon voucher worth Rs 75,000</li>
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                AWS Branded Swag Kit</li>
+
+                        </ol>
+                         <a href="javascript:void(0)" class="readmore">+</a> 
+                        <div class="more-content" style="display: none;">
+
+                            <p>Based on the final evaluation done at the national level, the top 10 schools would be rewarded the following-</p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="prize-box wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <span class="prize-label"><strong>All Participants</strong></span>
+                        <div class="icon mb-3">
+                            <img src="{{url_for('static',filename='prize.png')}}">
+                        </div>
+                        <ol class="text-start">
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                Amazon voucher worth
+                     Rs 50,000 </li>
+                            <li>
+                                <ion-icon name="checkmark-done-outline"></ion-icon>
+                                AWS Branded Swag Kit </li>
+
+                        </ol>
+                         <a href="javascript:void(0)" class="readmore">+</a> 
+                        <div class="more-content" style="display: none;">
+                            <p>The schools would be stack ranked based on the total number of submissions received. Top 3 schools would be rewarded the following- </p>
+
+
+
+                        </div>
+                    </div> 
+                </div>
+
+                
+                    </div>
+                </div>
+            </div>
+            </div>                                                                                                                                                                                                            
+
+
+
+
+
+            <div class="row">
+                <div class="col-md-6 text-center mx-auto text-white ">
+                     <p class="birdeye mb-2 px-5">Top 100 students to evaluated by AWS partners and customers for hiring opportunities.</p> 
+                    <p class="  birdeye">
+                        <em>AISPL may deduct or withhold any taxes that AISPL may be legally obligated to deduct or withhold from the value of prizes given.</em>
+                    </p>
+                    <button type="button" class="btn" style="color:white;"> <a href="{{url_for('register')}}">Register Now</a>                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+-->
+
+    
+    <div class="eligibility partners p90 d-none " id="eligibility">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading">
+                        <h2>Outreach Partners for AWS DeepRacer 2023​</h2>
+
+                    </div>
+                    <div class="parnter-wrapper text-center">
+                        <img src="{{url_for('static',filename='eduskills-logo.png')}}" alt="">
+                        <img src="{{url_for('static',filename='ictacademy_logo.png')}}" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col p-3"> 
+                    <ul><h3>Address</h3>
+                        <li><p>KGiSL INSTITUTE OF TECHNOLOGY<br />
+                        KGiSL Campus, 365, Thudiyalur Road,<br />
+                        Saravanampatti, Coimbatore - 641035</p>
+                                </li>
+                                <li>
+                                    <h5>For Admissions, please contact</h5>
+                                    <p>+91-90952 22222,	+91-97515 07810,	<br>+91-90809 27613,	+91-90952 44488</p>
+                                </li></ul>
+                    
+                            </div>
+                <div class="col p-3"> 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.383335051896!2d76.99583421480351!3d11.0847814921127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f792636f82b5%3A0xdc86449e9fb48675!2sKGiSL%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1622096188678!5m2!1sen!2sin" width="100%" height="100%" style="border:0; width:300px;" loading="lazy"></iframe>
+                        
+                </div>
+                <div class="col p-3"> 
+                    <h3>Follow Us on</h3>
+                        <a href="https://www.facebook.com/kitetechcollege"  target="_blank" ><img src="https://edu.kgisl.com/wp-content/themes/landing/assets/imag/fb.png" alt=""></a>
+                        <a href="https://www.instagram.com/kitetechcollege"  target="_blank" ><img src="https://edu.kgisl.com/wp-content/themes/landing/assets/imag/ins.png" alt=""></a>
+                            <a href="https://www.linkedin.com/school/kitetechcollege"  target="_blank" ><img src="https://edu.kgisl.com/wp-content/themes/landing/assets/imag/linkedin.png" alt=""></a>
+                            <a href="https://twitter.com/kitetechcollege"  target="_blank" ><img src="https://edu.kgisl.com/wp-content/themes/landing/assets/imag/twitter.png" alt=""></a>
+                                <a href="https://www.youtube.com/c/kitetechcollege"  target="_blank" ><img src="https://edu.kgisl.com/wp-content/themes/landing/assets/imag/youtube.png" alt=""></a>
+                </div>
+            
+            
+        </div>
+        </div> <br><br>
+        <div style="text-align:center;font-size:10px;">
+            <p>Copyright &copy; 2023 KGISL Educational Institutions. <span>All rights reserved.</span> 
+            </p>
+        </div>
+        
+
+
+   
+ 
+       
+</body>
+
+</html>

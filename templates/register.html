@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title> deeepracer - signup</title>
+    <style>
+        body{
+          background-image: url({{ url_for('static', filename='banner-slide.png') }})
+    }
+    </style>
+    
+    </head>
+<body>
+    <center><img src="{{url_for('static',filename='awssmile.png')}}" alt="AWS logo" style="margin-top: 10px;"> </center>
+    
+    <center><div class="container mt-4" style="width:500px;">
+        <h2 style="color:white;">Signup here to participate</h2>
+        <form action="{{url_for('register')}}" method="POST">
+            <div class="mb-3 mt-3" style="color:white;font-size:large;">
+                <label for="tname">Team Name :</label>
+                <input type="text" class="form-control" id="tname" placeholder="Your Team Name" name="tname">
+              </div>
+               <div class="mb-3 mt-3" style="color:white;font-size:large;">
+                <label for="tname">Captian Name :</label>
+                <input type="text" class="form-control" id="cname" placeholder="Team Captain name" name="cname">
+              </div>
+              <div class="mb-3">
+                <label for="pswd" style="color:white;font-size:large;"> Password :</label>
+                <input type="password" class="form-control" id="pswd" placeholder="Enter password" name="pswd">
+              </div>  
+          <div class="mb-3 mt-3">
+            <label for="cemail" style="color:white;font-size:large;">Email:</label>
+            <input type="email" class="form-control" id="cemail" placeholder="Enter captain's email" name="cemail">
+          </div>
+          <div class="mb-3 mt-3" style="color:white;font-size:large;">
+                <label for="orgname">Industry / College name :</label>
+                <input type="text" class="form-control" id="orgname" placeholder="Your organization name" name="orgname">
+              </div>
+              <div class="mb-3 mt-3" style="color:white;font-size:large;">
+                <label for="cpno">Captian Phone Number :</label>
+                <input type="number" class="form-control" id="cpno" placeholder="Team captain phone number" name="cpno">
+              </div>
+              <div class="mb-3 mt-3" style="color:white;font-size:large;">
+                <label for="members">No. Of Members :</label>
+                <input type="number" class="form-control" id="members" placeholder="No.OF members" name="members">
+              </div>
+              
+             </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+</body>
+</html>
